@@ -221,9 +221,7 @@ input:focus {
     border-radius: 24px;
 }
 
-
 /****** HEBERGEMENTS ET POPULAIRES ******/
-
 
 .section-title {
     margin: 0;
@@ -235,6 +233,18 @@ input:focus {
     border-radius: 20px;
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    transform: scale(1);
+    transition: 0.1s ease-in-out;
+
+}
+
+.card:hover {
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.3));
+    transform: scale(1.01);
+}
+
+.card:active {
+    opacity: 0.8;
 }
 
 .card img {
@@ -249,11 +259,12 @@ input:focus {
     font-weight: 700;
 }
 
-.neutralStar {
+.neutral-star {
     color: var(--main-bg-color)
 }
 
 /****** Hebergements And Populaires ***********/
+
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
@@ -266,34 +277,59 @@ input:focus {
     box-sizing: border-box;
 }
 
+.hebergements h3 {
+    margin: 0%;
+}
+
 /****** Hebergements ***********/
+
 .hebergements {
     width: 65%;
 }
 
 .hebergements-cards {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    flex-grow: 1;
+    gap: 30px;
     justify-content: space-between;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .hebergements-cards .card {
-    display: flex;
-    flex-direction: column;
-    margin-top: 33px;
-    width: 30%;
-    /* height: 30%; */
+    flex-basis: 28%;
+    flex-grow: 1;
 }
 
-.hebergements-cards img {
-    /* width: 33%; */
-    height: 134px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+.hebergements-cards .card img {
+    width: 100%;
+    height: 7rem;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.hebergements-cards .card-content {
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.hebergements-cards .card-title {
+    margin: 7px 0px;
+}
+
+.hebergements-cards .card-subtitle {
+    margin: 0;
+}
+
+.hebergements-cards .card-rating {
+    margin: 5px 0px;
 }
 
 /****** Populaires ***********/
+
 .populaires {
     width: 32%;
 }
@@ -305,6 +341,7 @@ input:focus {
 }
 
 .populaires-cards .card {
+    /* background: pink; */
     display: flex;
     margin-top: 33px;
 }
@@ -317,6 +354,7 @@ input:focus {
 }
 
 .populaires-cards .card-content {
+    /* background: blue; */
     width: 67%;
     padding-left: 15px;
     display: flex;
@@ -326,6 +364,7 @@ input:focus {
 }
 
 .populaires-cards .card-title {
+    /* background: green; */
     margin-top: 10px;
     margin-bottom: 4px;
 }

@@ -240,7 +240,7 @@ input:focus {
 
 .card:hover {
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.3));
-    transform: scale(1.01);
+    /* transform: scale(1.01); */
 }
 
 .card:active {
@@ -380,30 +380,39 @@ input:focus {
 /****** Activités ***********/
 
 .activites {
-    
+    /* background: pink; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    padding: 0px 30px;
 }
 
 .activites-cards {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
+    gap: 30px;
 }
 
 .activites-cards .card {
     display: flex;
     flex-direction: column;
+    padding: 0px;
     margin-top: 33px;
-    width: 30%;
-    /* height: 30%; */
+    flex-grow: 1;
+    flex-basis: 28%;
 }
 
-.hebergements-cards img {
-    /* width: 33%; */
-    height: 134px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+.activites-cards .card img {
+    height: 380px;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
 }
+
+.activites-cards .card h3 {
+    margin-left: 1rem;
+}
+
+/****** FOOTER ***********/
 
 .footer-links
 {

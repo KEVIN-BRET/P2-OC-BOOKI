@@ -557,4 +557,15 @@ footer {
         border-radius:  1rem 1rem 1rem 1rem;
     }
 
+    /****** filter bar ***********/
+
+    .filter-bar .filter-btn {
+
+        flex-basis: 33%;
+            /****** a reverifier a la fin !!! ***********/
+            /****** une fois le responsive des autres section terminé ***********/
+        flex-grow: 1;
+        font-size: 1rem;
+    }
+
 }

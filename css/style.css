@@ -35,14 +35,17 @@ body {
 /****** HEADER / NAV ******/
 
 header {
-    /* background: red; */
-    height: 79px;
+    /* background: pink; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: top;
+}
+
+.logo-container {
+    height: 79px;
+    display: flex;
     align-items: center;
-    margin: 0px -50px;
-    padding: 0px 30px;
 }
 
 .logoBooki {
@@ -50,7 +53,6 @@ header {
 }
 
 .menu {
-    height: 100%;
     display: flex;
 }
 
@@ -65,7 +67,9 @@ header {
     display: flex;
     align-items: center;
     height: 35px;
+    box-sizing: border-box;
     border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
 }
 
 .menu-liens a:hover {
@@ -491,6 +495,46 @@ footer {
 }
 
 /* Small devices (phones, less than 768px) */
+
+/****** PHONES ***********/
+
 @media (max-width: 767.98px) {
-    /* ... */
+
+    .main-container {
+        padding: 0 20px;
+    }
+
+    /****** header ***********/
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px -50px;
+    }
+
+    .menu {
+        width: 100%;
+    }
+
+    .menu-liens {
+        width: 100%;
+        justify-content: center;
+        gap: 0px;
+    }
+
+    .menu-liens a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-items: start;
+        flex-basis: 50%;
+    }
+
+    .menu-liens a:hover {
+        border-top: 2px solid transparent;
+        border-bottom: 2px solid var(--main-color);
+    }
+
+
 }

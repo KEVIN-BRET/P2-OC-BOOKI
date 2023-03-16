@@ -22,7 +22,7 @@ body {
     display: flex;
     justify-content: center;
     padding: 0px;
-    /* margin: 0px; */
+    margin: 0px;
 }
 
 .main-container {
@@ -414,16 +414,33 @@ input:focus {
 
 /****** FOOTER ***********/
 
+footer {
+    margin-top: 4rem;
+    background-color: var(--main-bg-color);
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-container {
+    flex-basis: 33%;
+    padding-left: 1.5rem;
+}
+
 .footer-links
 {
-  padding-left:0;
-  list-style:none
+    padding-left:0;
+    list-style:none;
+}
+
+.footer-links li {
+    margin-top: 1rem;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
+
 @media (max-width: 1024px) {
     .hebergements-and-populaires {
         flex-direction: column;

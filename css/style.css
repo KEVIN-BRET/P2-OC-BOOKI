@@ -79,14 +79,6 @@ header {
 
 /****** SECTION SEARCH ******/
 
-.headline {
-    /* background: green; */
-}
-
-/* .headline h2, .headline p {
-    background: pink;
-} */
-
 .headline p {
     margin-top: -13px;
 }
@@ -318,6 +310,8 @@ button .fas {
 .hebergements-cards .card {
     flex-basis: 27%;
     flex-grow: 1;
+    /* height: 207px; */
+    box-sizing: border-box;
 }
 
 .hebergements-cards .card img {
@@ -464,10 +458,6 @@ footer {
         align-items: start;
     }
 
-    .filter-container h3 {
-        margin: 0px;
-    }
-
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -485,14 +475,19 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        gap: 1rem;
     }
 
     .populaires-cards .card {
-        width: 30%;
+        width: 31%;
     }
 
     .populaires-cards .card-title {
         font-size: 14px;
+    }
+
+    .hebergements-and-populaires .populaires h2{
+        margin-bottom: 1.2rem;
     }
 
     .populaires-cards .card-subtitle {
@@ -511,7 +506,7 @@ footer {
 @media (max-width: 767.98px) {
 
     .main-container {
-        padding: 0 20px;
+        padding: 0px;
     }
 
     /****** header ***********/
@@ -520,7 +515,6 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 0px -50px;
     }
 
     .menu {
@@ -538,12 +532,16 @@ footer {
         align-items: center;
         justify-content: center;
         align-items: start;
-        flex-basis: 50%;
+        width: 50%;
     }
 
     .menu-liens a:hover {
         border-top: 2px solid transparent;
         border-bottom: 2px solid var(--main-color);
+    }
+
+    .search {
+        padding: 0rem 1rem;
     }
 
     /****** search bar ***********/
@@ -561,11 +559,63 @@ footer {
 
     .filter-bar .filter-btn {
 
-        flex-basis: 33%;
+        width: 33%;
+        /* flex-basis: 33%; */
             /****** a reverifier a la fin !!! ***********/
             /****** une fois le responsive des autres section terminé ***********/
         flex-grow: 1;
         font-size: 1rem;
+    }
+
+    
+    .hebergements-and-populaires {
+        flex-direction: column-reverse;
+    }
+    
+    .hebergements-and-populaires section {
+        padding: 20px;
+    }
+
+    /****** section populaires ***********/
+
+
+
+    .hebergements-and-populaires .populaires {
+        border-radius: 0%;
+    }
+
+    .hebergements-and-populaires .populaires h2{
+        margin-bottom: 1rem;
+    }
+
+    .populaires-cards {
+        flex-direction: column;
+        /* gap: 0rem; */
+    }
+
+    .populaires-cards .card {
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 0px;
+    }
+
+    .hebergements-and-populaires .hebergements {
+        background: none;
+    }
+
+    .hebergements-cards{
+        flex-direction: column;
+    }
+
+    .activites-cards {
+        flex-direction: column;
+
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 0.8rem;
+
     }
 
 }

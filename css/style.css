@@ -42,7 +42,6 @@ body {
 /****** HEADER / NAV ******/
 
 header {
-    /* background: pink; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -130,8 +129,7 @@ header {
     font-size: 1.1rem;
 }
 
-/* désactivation de la bordure au focus */
-
+/* ? désactivation de la bordure au focus */
 input:focus {
     outline: none;
 }
@@ -177,7 +175,6 @@ button .fas {
 /****** FILTER BAR ******/
 
 .filter-container {
-    /* background: green; */
     display: flex;
     gap: 1.1rem;
     margin-top: 2rem;
@@ -200,7 +197,6 @@ button .fas {
 }
 
 .filter-btn {
-    /* background: green; */
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -227,7 +223,6 @@ button .fas {
 /****** INFOS-DISPO LINE ******/
 
 .infos-dispo {
-    /* background: pink; */
     display: flex;
     align-items: center;
     gap: 0.75rem;
@@ -298,11 +293,6 @@ button .fas {
     color: var(--main-bg-color)
 }
 
-.hebergements h3 {
-    margin-top: 2rem;
-    margin-bottom: 0;
-}
-
 /****** Hebergements ***********/
 
 .hebergements {
@@ -310,11 +300,9 @@ button .fas {
 }
 
 .hebergements-cards {
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
-    justify-content: space-between;
     margin-top: 2rem;
 }
 
@@ -416,7 +404,6 @@ button .fas {
 }
 
 .activites-cards .card-txt {
-    /* background: pink; */
     display: flex;
     align-items: center;
     flex-grow: 1;
@@ -427,7 +414,6 @@ button .fas {
     flex-direction: column;
     padding: 0px;
     margin-top: 33px;
-    /* flex-grow: 1; */
     flex-basis: 25%;
 }
 
@@ -624,7 +610,6 @@ footer {
 
     .populaires-cards {
         flex-direction: column;
-        /* gap: 0rem; */
     }
 
     .populaires-cards .card {
@@ -638,16 +623,13 @@ footer {
     }
 
     .hebergements-cards {
+        display: flex;
         flex-direction: column;
         gap: 0;
         margin-top: 0;
     }
 
     .hebergements-cards .card {
-        margin-top: 1rem;
-    }
-
-    .hebergements-and-populaires .hebergements h3{
         margin-top: 1rem;
     }
 
